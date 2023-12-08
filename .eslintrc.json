@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-console": "error",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "message": "Remember to remove asyncDelay from production code",
+        "selector": "CallExpression[callee.name='asyncDelay']"
+      }
+    ]
+  },
+  "root": true
+}
