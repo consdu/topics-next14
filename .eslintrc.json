@@ -5,8 +5,41 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "perfectionist"],
   "rules": {
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        "groups": [
+          [
+            "type",
+            "parent-type",
+            "sibling-type",
+            "index-type",
+            "internal-type"
+          ],
+          "react",
+          "next",
+          ["builtin", "external"],
+          ["alias", "index", "parent", "sibling", "internal"],
+          ["side-effect", "style"],
+          "object",
+          "unknown"
+        ],
+        "custom-groups": {
+          "value": {
+            "react": ["react", "react-dom", "react-native"],
+            "next": ["next", "next/*"],
+            "alias": "@/**"
+          },
+          "type": {
+            "react": "react",
+            "next": "next"
+          }
+        },
+        "newlines-between": "never"
+      }
+    ],
     "no-console": "error",
     "no-restricted-syntax": [
       "error",

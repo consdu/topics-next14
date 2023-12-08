@@ -1,5 +1,5 @@
-import { db } from "@/db";
 import { redirect } from "next/navigation";
+import { db } from "@/db";
 
 interface PostShowProps {
   postId: string;

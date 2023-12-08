@@ -1,8 +1,8 @@
+import { Divider } from "@nextui-org/react";
 import PostList from "@/components/posts/PostList";
 import TopicCreateForm from "@/components/topics/TopicCreateForm";
 import TopicList from "@/components/topics/TopicList";
 import { getTopPosts } from "@/db/queries/post";
-import { Divider } from "@nextui-org/react";
 
 export default function Home() {
   return (

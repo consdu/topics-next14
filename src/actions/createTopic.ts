@@ -1,13 +1,13 @@
 "use server";
 
+import type { Topic } from "@prisma/client";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { z } from "zod";
 import { auth } from "@/auth";
-import { redirect } from "next/navigation";
-import type { Topic } from "@prisma/client";
 import { db } from "@/db";
-import { paths } from "@/utils/paths";
-import { revalidatePath } from "next/cache";
 import { errorMessages } from "@/utils/constants";
+import { paths } from "@/utils/paths";
 
 export interface CreateTopicFormState {
   errors: {

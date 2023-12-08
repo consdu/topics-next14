@@ -6,8 +6,8 @@ import { redirect } from "next/navigation";
 import { z } from "zod";
 import { auth } from "@/auth";
 import { db } from "@/db";
-import { paths } from "@/utils/paths";
 import { errorMessages } from "@/utils/constants";
+import { paths } from "@/utils/paths";
 
 const createPostSchema = z.object({
   title: z.string().min(3),

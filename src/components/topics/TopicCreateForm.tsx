@@ -1,5 +1,6 @@
 "use client";
 
+import { useFormState } from "react-dom";
 import {
   Input,
   Button,
@@ -8,9 +9,8 @@ import {
   PopoverTrigger,
   PopoverContent,
 } from "@nextui-org/react";
-import { useFormState } from "react-dom";
-import * as actions from "@/actions";
 import SubmitButton from "../shared/SubmitButton";
+import * as actions from "@/actions";
 
 export default function TopicCreateForm() {
   const [formState, action] = useFormState(actions.createTopic, { errors: {} });

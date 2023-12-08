@@ -1,6 +1,6 @@
+import type { Comment } from "@prisma/client";
 import { cache } from "react";
 import { db } from "@/db";
-import type { Comment } from "@prisma/client";
 
 export type CommentWithAuthor = Comment & {
   user: { name: string | null; image: string | null };

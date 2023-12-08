@@ -1,10 +1,10 @@
 "use client";
 
-import { useFormState } from "react-dom";
 import { useEffect, useRef, useState } from "react";
+import { useFormState } from "react-dom";
 import { Textarea, Button } from "@nextui-org/react";
-import SubmitButton from "@/components/shared/SubmitButton";
 import * as actions from "@/actions";
+import SubmitButton from "@/components/shared/SubmitButton";
 
 interface CommentCreateFormProps {
   postId: string;

@@ -1,13 +1,13 @@
+import { Suspense } from "react";
+import Link from "next/link";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
 } from "@nextui-org/react";
-import Link from "next/link";
 import HeaderAuth from "@/components/HeaderAuth";
 import SearchInput from "@/components/SearchInput";
-import { Suspense } from "react";
 
 export default async function Header() {
   return (
