@@ -8,7 +8,7 @@ export type PostWithDetails = Post & {
 };
 
 export default function getPostsByTopicSlug(
-  slug: string
+  slug: string,
 ): Promise<PostWithDetails[]> {
   return db.post.findMany({
     where: { topic: { slug } },

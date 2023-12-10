@@ -19,7 +19,7 @@ const getCommentsByPostId = cache(
         },
       },
     });
-  }
+  },
 );
 
 export default getCommentsByPostId;

@@ -15,7 +15,7 @@ export default function TopicShowPage({ params }: TopicShowPageProps) {
   return (
     <div className="grid grid-cols-4 gap-4 p-4">
       <div className="col-span-3">
-        <h1 className="text-2xl font-bold mb-2">{slug}</h1>
+        <h1 className="mb-2 text-2xl font-bold">{slug}</h1>
         <div className="pr-20 pt-6">
           <PostList fetchData={() => getPostsByTopicSlug(slug)} />
         </div>
@@ -30,7 +30,7 @@ export default function TopicShowPage({ params }: TopicShowPageProps) {
 export async function generateStaticParams() {
   const topics = await getTopicSlugs();
 
-  return topics.map(topic => ({
+  return topics.map((topic) => ({
     slug: topic.slug,
   }));
 }

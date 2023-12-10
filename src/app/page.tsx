@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-4 gap-4 p-4">
       <section className="col-span-3">
-        <h1 className="text-xl mb-4">Top posts</h1>
+        <h1 className="mb-4 text-xl">Top posts</h1>
         <div className="px-2">
           <PostList fetchData={getTopPosts} />
         </div>

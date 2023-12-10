@@ -22,7 +22,7 @@ export default function TopicCreateForm() {
       </PopoverTrigger>
       <PopoverContent>
         <form action={action}>
-          <div className="flex flex-col gap-4 p-4 w-80">
+          <div className="flex w-80 flex-col gap-4 p-4">
             <h3 className="text-lg">Create a Topic</h3>
             <Input
               name="name"
@@ -41,7 +41,7 @@ export default function TopicCreateForm() {
               errorMessage={formState.errors.description?.join(", ")}
             />
             {formState.errors.general ? (
-              <div className="p-2 bg-red-100 border border-red-400 text-red-700">
+              <div className="border border-red-400 bg-red-100 p-2 text-red-700">
                 {formState.errors.general?.join(", ")}
               </div>
             ) : null}

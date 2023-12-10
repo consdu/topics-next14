@@ -24,7 +24,7 @@ export default function CommentCreateForm({
 
   const [formState, action] = useFormState(
     actions.createComment.bind(null, { postId, parentId }),
-    { errors: {} }
+    { errors: {} },
   );
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function CommentCreateForm({
         />
 
         {formState.errors.general ? (
-          <div className="p-2 bg-red-200 border rounded border-red-400">
+          <div className="rounded border border-red-400 bg-red-200 p-2">
             {formState.errors.general?.join(", ")}
           </div>
         ) : null}

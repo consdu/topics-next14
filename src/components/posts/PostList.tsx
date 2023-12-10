@@ -9,9 +9,9 @@ interface PostListProps {
 export default async function PostList({ fetchData }: PostListProps) {
   const posts = await fetchData();
 
-  const renderedPosts = posts.map(post => {
+  const renderedPosts = posts.map((post) => {
     return (
-      <li key={post.id} className="border rounded p-2">
+      <li key={post.id} className="rounded border p-2">
         <Link href={paths.postShow(post.topic.slug, post.id)}>
           <h3 className="text-lg font-bold">{post.title}</h3>
           <div className="flex flex-row gap-8">
@@ -25,5 +25,5 @@ export default async function PostList({ fetchData }: PostListProps) {
     );
   });
 
-  return <ul className="space-y-2 flex flex-col gap-2">{renderedPosts}</ul>;
+  return <ul className="flex flex-col gap-2 space-y-2">{renderedPosts}</ul>;
 }

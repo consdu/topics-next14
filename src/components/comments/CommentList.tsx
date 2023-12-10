@@ -9,10 +9,10 @@ export default async function CommentList({ postId }: CommentListProps) {
   const comments = await getCommentsByPostId(postId);
 
   const topLevelComments = comments.filter(
-    comment => comment.parentId === null
+    (comment) => comment.parentId === null,
   );
 
-  const renderedComments = topLevelComments.map(comment => {
+  const renderedComments = topLevelComments.map((comment) => {
     return (
       <CommentShow
         key={comment.id}

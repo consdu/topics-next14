@@ -11,7 +11,7 @@ import SearchInput from "@/components/SearchInput";
 
 export default async function Header() {
   return (
-    <Navbar className="shadow mb-6 py-2">
+    <Navbar className="mb-6 py-2 shadow">
       <NavbarBrand>
         <Link href="/" className="font-bold">
           Topics

@@ -19,7 +19,7 @@ export default function PostShowPage({
   return (
     <div className="space-y-3 pb-20">
       <Link
-        className="underline decoration-solid block mb-10"
+        className="mb-10 block underline decoration-solid"
         href={paths.topicShow(slug)}
       >
         {"< "}Back to {slug}

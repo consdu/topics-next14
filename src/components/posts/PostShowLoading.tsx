@@ -6,7 +6,7 @@ export default function PostShowLoading() {
       <div className="my-2">
         <Skeleton className="h-8 w-48" />
       </div>
-      <div className="p-4 border rounded space-y-2">
+      <div className="space-y-2 rounded border p-4">
         <Skeleton className="h-8 max-w-full" />
         <Skeleton className="h-8 max-w-full" />
         <Skeleton className="h-8 max-w-full" />
