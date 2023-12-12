@@ -81,6 +81,7 @@ export async function createComment(
   }
 
   revalidatePath(paths.postShow(topic.slug, postId));
+  revalidatePath(paths.topicShow(topic.slug));
 
   return {
     errors: {},
