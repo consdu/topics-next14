@@ -1,7 +1,7 @@
 # Topics
 
 ## Description
-Topics is a dynamic web application built using Next.js 14, leveraging the powerful server actions feature for efficient backend processing. This project utilizes Prisma as an ORM with a SQLite local database. The UI is styled using Tailwind CSS.
+Topics is a dynamic web application built using Next.js 14, leveraging the powerful server actions feature for efficient backend processing. This project utilizes Prisma as an ORM with a Postgres database. The UI is styled using Tailwind CSS.
 
 ## Technologies Used
 - **Next.js 14:** For building the server-side rendered application.
