@@ -1,7 +1,7 @@
 import PostCreateForm from "@/components/posts/PostCreateForm";
 import PostList from "@/components/posts/PostList";
 import getPostsByTopicSlug from "@/db/queries/post";
-import { getTopicSlugs } from "@/db/queries/topic";
+// import { getTopicSlugs } from "@/db/queries/topic";
 
 interface TopicShowPageProps {
   params: {
@@ -27,10 +27,10 @@ export default function TopicShowPage({ params }: TopicShowPageProps) {
   );
 }
 
-export async function generateStaticParams() {
-  const topics = await getTopicSlugs();
+// export async function generateStaticParams() {
+//   const topics = await getTopicSlugs();
 
-  return topics.map((topic) => ({
-    slug: topic.slug,
-  }));
-}
+//   return topics.map((topic) => ({
+//     slug: topic.slug,
+//   }));
+// }
