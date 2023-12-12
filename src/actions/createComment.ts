@@ -80,8 +80,9 @@ export async function createComment(
     };
   }
 
-  revalidatePath(paths.postShow(topic.slug, postId));
+  revalidatePath(paths.home());
   revalidatePath(paths.topicShow(topic.slug));
+  revalidatePath(paths.postShow(topic.slug, postId));
 
   return {
     errors: {},
