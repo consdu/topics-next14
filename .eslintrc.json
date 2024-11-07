@@ -2,10 +2,17 @@
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "perfectionist"],
+  "plugins": ["@typescript-eslint", "perfectionist", "tailwindcss"],
+  "settings": {
+    "tailwindcss": {
+      "callees": ["cn"],
+      "config": "tailwind.config.js"
+    }
+  },
   "rules": {
     "perfectionist/sort-imports": [
       "error",
@@ -41,6 +48,7 @@
       }
     ],
     "no-console": "error",
+    "tailwindcss/no-custom-classname": "off",
     "no-restricted-syntax": [
       "error",
       {
