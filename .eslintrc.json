@@ -3,7 +3,8 @@
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "plugin:diff/ci"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "perfectionist", "tailwindcss"],
